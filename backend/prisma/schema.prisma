@@ -1,0 +1,170 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Player {
+  id                String             @id @default(uuid())
+  guestToken        String             @unique
+  name              String             @default("সিলেটি ড্রাইভার")
+  taka              Int                @default(150)
+  totalChaos        Int                @default(0)
+  reputation        Int                @default(100)
+  equippedPaint     String             @default("paint_classic_green")
+  equippedDecal     String             @default("decal_mayer_dua")
+  equippedHorn      String             @default("horn_sylheti_pee")
+  equippedAccessory String             @default("acc_none")
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+
+  guestSessions     GuestSession[]
+  progress          PlayerProgress?
+  missionSessions   MissionSession[]
+  completions       MissionCompletion[]
+  items             PlayerItem[]
+  leaderboard       LeaderboardEntry?
+  newspapers        PublishedNewspaper[]
+}
+
+model GuestSession {
+  id           String    @id @default(uuid())
+  token        String    @unique
+  playerId     String
+  player       Player    @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  ipAddress    String?
+  userAgent    String?
+  lastActiveAt DateTime  @default(now())
+  expiresAt    DateTime
+  createdAt    DateTime  @default(now())
+}
+
+model PlayerProgress {
+  id                   String   @id @default(uuid())
+  playerId             String   @unique
+  player               Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  unlockedMissionsJson String   @default("[\"mission_1\"]")
+  totalDistanceKm      Float    @default(0.0)
+  totalPassengers      Int      @default(0)
+  totalNewspapers      Int      @default(0)
+  highestChaos         Int      @default(0)
+  bestScore            Int      @default(0)
+  updatedAt            DateTime @updatedAt
+}
+
+model Mission {
+  id                 String              @id
+  titleBn            String
+  titleEn            String
+  subtitleBn         String
+  subtitleEn         String
+  descriptionBn      String
+  descriptionEn      String
+  rewardTaka         Int
+  baseFareTaka       Int
+  difficulty         String              @default("EASY")
+  timeLimitSeconds   Int                 @default(180)
+  isAvailableInMvp   Boolean             @default(true)
+  orderIndex         Int                 @default(0)
+  pickupX            Float
+  pickupY            Float
+  pickupZ            Float
+  pickupNameBn       String
+  pickupNameEn       String
+  dropoffX           Float
+  dropoffY           Float
+  dropoffZ           Float
+  dropoffNameBn      String
+  dropoffNameEn      String
+  passengerNameBn    String
+  passengerNameEn    String
+  dialogueJson       String
+  specialGimmick     String?
+
+  sessions           MissionSession[]
+  completions        MissionCompletion[]
+}
+
+model MissionSession {
+  id              String    @id @default(uuid())
+  sessionToken    String    @unique
+  playerId        String
+  player          Player    @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  missionId       String
+  mission         Mission   @relation(fields: [missionId], references: [id], onDelete: Cascade)
+  challengeNonce  String
+  startedAt       DateTime  @default(now())
+  expiresAt       DateTime
+  completed       Boolean   @default(false)
+}
+
+model MissionCompletion {
+  id                 String   @id @default(uuid())
+  playerId           String
+  player             Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  missionId          String
+  mission            Mission  @relation(fields: [missionId], references: [id], onDelete: Cascade)
+  timeElapsedSeconds Float
+  chaosScore         Int
+  fareNegotiatedTaka Int
+  tipTaka            Int      @default(0)
+  damagePercent      Float    @default(0.0)
+  takaEarned         Int
+  newspaperJson      String
+  createdAt          DateTime @default(now())
+}
+
+model GarageItem {
+  id               String       @id
+  nameBn           String
+  nameEn           String
+  descriptionBn    String
+  descriptionEn    String
+  category         String       // PAINT, DECAL, HORN, ACCESSORY
+  priceTaka        Int          @default(0)
+  previewColor     String?
+  previewIcon      String?
+  speedBoost       Float        @default(0.0)
+  handlingBoost    Float        @default(0.0)
+  chaosMultiplier  Float        @default(1.0)
+
+  playerItems      PlayerItem[]
+}
+
+model PlayerItem {
+  id           String      @id @default(uuid())
+  playerId     String
+  player       Player      @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  garageItemId String
+  garageItem   GarageItem  @relation(fields: [garageItemId], references: [id], onDelete: Cascade)
+  purchasedAt  DateTime    @default(now())
+
+  @@unique([playerId, garageItemId])
+}
+
+model LeaderboardEntry {
+  id                     String   @id @default(uuid())
+  playerId               String   @unique
+  player                 Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  playerName             String
+  taka                   Int      @default(0)
+  totalChaos             Int      @default(0)
+  completedMissionsCount Int      @default(0)
+  favoriteCNGStyle       String   @default("Classic Green")
+  updatedAt              DateTime @updatedAt
+}
+
+model PublishedNewspaper {
+  id           String   @id @default(uuid())
+  playerId     String
+  player       Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  editionNo    Int
+  headlineBn   String
+  headlineEn   String
+  newspaperJson String
+  likesCount   Int      @default(0)
+  createdAt    DateTime @default(now())
+}

@@ -1,0 +1,314 @@
+{
+  "dialogues": {
+    "HORN_SPAM": [
+      {
+        "id": "horn_1",
+        "speakerBn": "আম্বরখানার চা বিক্রেতা",
+        "speakerEn": "Tea Stall Vendor",
+        "avatar": "tea",
+        "textBn": "ও মামা! হর্ন বাজাইয়া কি কেটলির পানি গরম করবা নি?!",
+        "textEn": "Mama! Trying to boil my tea water with your horn?!"
+      },
+      {
+        "id": "horn_2",
+        "speakerBn": "ট্রাফিক পুলিশ",
+        "speakerEn": "Traffic Cop",
+        "avatar": "police",
+        "textBn": "হর্নরে কি বিয়ার সানাই মনে করছস রে পুয়া? কান তো ফাটায় দিলা!",
+        "textEn": "Think that horn is a wedding flute son? Bursting my eardrums!"
+      },
+      {
+        "id": "horn_3",
+        "speakerBn": "পথচারী চাচা",
+        "speakerEn": "Walking Uncle",
+        "avatar": "elder",
+        "textBn": "আইচ্ছা বুঝছি তোমার সিএনজি আছে, সারা শহররে হুনানি লাগব নি?",
+        "textEn": "Okay we get you own a CNG, must you broadcast it to all Sylhet?"
+      },
+      {
+        "id": "horn_4",
+        "speakerBn": "অন্য সিএনজি ড্রাইভার",
+        "speakerEn": "Fellow Driver",
+        "avatar": "driver",
+        "textBn": "মামা হর্নের ব্যাটারি কি ফ্রি পাইছো নি? আরেকবার বাজালে প্রতিযোগিতা শুরু হইব!",
+        "textEn": "Mama did you get the battery for free? Honk once more and it's on!"
+      }
+    ],
+    "SLOW_DRIVING": [
+      {
+        "id": "slow_1",
+        "speakerBn": "অধৈর্য যাত্রী",
+        "speakerEn": "Impatient Passenger",
+        "avatar": "passenger",
+        "textBn": "মামা, আমি কি নামিয়া ধাক্কা দিতাম নি? কচ্ছপও তোমার চেয়ে জোরে হাঁটে!",
+        "textEn": "Mama, should I step out and push? Even a turtle walks faster!"
+      },
+      {
+        "id": "slow_2",
+        "speakerBn": "লন্ডনী চাচা",
+        "speakerEn": "Londoni Uncle",
+        "avatar": "londoni",
+        "textBn": "ই পুয়া, হিথরোর ফ্লাইট তো মিস হই যাইব! একটু গ্যাস দেও!",
+        "textEn": "Oh lad, I'll miss my Heathrow flight! Give it some gas!"
+      },
+      {
+        "id": "slow_3",
+        "speakerBn": "রিকশাওয়ালা",
+        "speakerEn": "Rickshaw Puller",
+        "avatar": "rickshaw",
+        "textBn": "মামা, সাইড দেও! আমার পায়ে চালিত রিকশা তোমারে ওভারটেক করতাছে!",
+        "textEn": "Mama move aside! My bicycle pedal rickshaw is overtaking you!"
+      }
+    ],
+    "SPEEDING": [
+      {
+        "id": "speed_1",
+        "speakerBn": "ডরাইয়া যাওয়া যাত্রী",
+        "speakerEn": "Terrified Passenger",
+        "avatar": "passenger",
+        "textBn": "ও মামা! ব্রেক কষো! আমি টিলাগড় যাইমু, জান্নাতুল ফেরদাউসে না!",
+        "textEn": "O Mama! Brake! I want to go to Tilagor, not straight to Heaven!"
+      },
+      {
+        "id": "speed_2",
+        "speakerBn": "আম্মা (ফোনে)",
+        "speakerEn": "Mom (On Phone)",
+        "avatar": "elder",
+        "textBn": "পুয়া রে, সিএনজিরে কি বোয়িং বিমান মনে করছস? আস্তে চালা!",
+        "textEn": "My boy, do you think your CNG is a Boeing jet? Slow down!"
+      },
+      {
+        "id": "speed_3",
+        "speakerBn": "ভিআইপি প্যাসেঞ্জার",
+        "speakerEn": "VIP Passenger",
+        "avatar": "vip",
+        "textBn": "মায়ের দোয়া লেখা আছে ঠিকই, কিন্তু ডানা তো লাগানো নাই রে বাজি!",
+        "textEn": "Mother's blessings are written, but wings aren't attached dear!"
+      }
+    ],
+    "WRONG_ROUTE": [
+      {
+        "id": "route_1",
+        "speakerBn": "বিরক্ত যাত্রী",
+        "speakerEn": "Annoyed Passenger",
+        "avatar": "passenger",
+        "textBn": "জিন্দাবাজার যাইতে গিয়া আম্বরখানাত হাজির! মামা, ইডা কিতা রাস্তা?",
+        "textEn": "Heading to Zindabazar and arrived in Ambarkhana! Mama, what road is this?"
+      },
+      {
+        "id": "route_2",
+        "speakerBn": "স্থানীয় দোকানদার",
+        "speakerEn": "Shopkeeper",
+        "avatar": "shopkeeper",
+        "textBn": "মামা এই গলি দিয়া কিন ব্রিজে যাওন যায় না, এইটা আমার বাড়ির উঠান!",
+        "textEn": "Mama this alley doesn't lead to Keane Bridge, this is my front yard!"
+      },
+      {
+        "id": "route_3",
+        "speakerBn": "স্কুল ছাত্র",
+        "speakerEn": "School Kid",
+        "avatar": "student",
+        "textBn": "মামা গুগল ম্যাপস কি উল্টা ধইরা চালাইতাছো নি?",
+        "textEn": "Mama are you holding your Google Maps upside down?"
+      }
+    ],
+    "LOW_FUEL": [
+      {
+        "id": "fuel_1",
+        "speakerBn": "সিএনজি মিটার",
+        "speakerEn": "CNG Meter",
+        "avatar": "meter",
+        "textBn": "গ্যাস মিটার কয়: পাম্পে চল মামা, নাইলে দোয়া দিয়া আর পুশ হইতো নায়!",
+        "textEn": "Gas meter says: Hit the pump Mama, prayers won't push the piston!"
+      },
+      {
+        "id": "fuel_2",
+        "speakerBn": "অভিজ্ঞ মেকানিক",
+        "speakerEn": "Mechanic",
+        "avatar": "mechanic",
+        "textBn": "সিলিন্ডারে বাতাস ছাড়া আর কিছুই নাই! সুরমা পাম্পে দৌড়াও!",
+        "textEn": "Nothing left in the cylinder except hot air! Sprint to Surma pump!"
+      }
+    ],
+    "GOAT_BLOCKING": [
+      {
+        "id": "goat_1",
+        "speakerBn": "সিলেটি খাসি",
+        "speakerEn": "Sylheti Goat",
+        "avatar": "goat",
+        "textBn": "ম্যাআআআ! আমি ভিআইপি খাসি, রাস্তা আমার বাপের!",
+        "textEn": "MEHHH! I am a VIP Eid goat, this road belongs to my father!"
+      },
+      {
+        "id": "goat_2",
+        "speakerBn": "খাসির ব্যাপারী",
+        "speakerEn": "Goat Trader",
+        "avatar": "trader",
+        "textBn": "মামা ব্রেক মারো! খাসির গায়ে টোকা লাগলে দেড় লাখ টাকা গচ্ছা যাইব!",
+        "textEn": "Mama slam the brakes! One scratch on this goat costs 1.5 Lakh Taka!"
+      }
+    ],
+    "CHICKEN_PANIC": [
+      {
+        "id": "chk_1",
+        "speakerBn": "মুরগির খাঁচা",
+        "speakerEn": "Chicken Crates",
+        "avatar": "chicken",
+        "textBn": "কুক্কুরু ক্কু! ড্রাইভার মামা, আমরা রোস্ট হইতে রাজি, কিন্তু এক্সিডেন্টে না!",
+        "textEn": "Cock-a-doodle-doo! We agree to be roast, not highway roadkill!"
+      },
+      {
+        "id": "chk_2",
+        "speakerBn": "বাবুর্চি আলাউদ্দিন",
+        "speakerEn": "Chef Alauddin",
+        "avatar": "chef",
+        "textBn": "মুরগি যদি লাফ দিয়া পলায়, তোমার বিল থাইকা টাকা কাটমু মামা!",
+        "textEn": "If a chicken flies out, I'm deducting Taka from your fare Mama!"
+      }
+    ],
+    "CNG_BOUNCE": [
+      {
+        "id": "bnc_1",
+        "speakerBn": "পেছনের যাত্রী",
+        "speakerEn": "Backseat Passenger",
+        "avatar": "passenger",
+        "textBn": "ওরে বাপরে বাপ! মাথার খুলি সিএনজির ছাদে লাইগা টোল খাইয়া গেল!",
+        "textEn": "Ouch! My head hit the metal roof and dented my skull!"
+      },
+      {
+        "id": "bnc_2",
+        "speakerBn": "সুরমা মিষ্টি বিক্রেতা",
+        "speakerEn": "Sweets Seller",
+        "avatar": "sweets",
+        "textBn": "আমার রসগোল্লার সিরা উইঠ্যা তোমার উইন্ডশিল্ডে ছিটকাইয়া পড়ল মামা!",
+        "textEn": "The syrup from my sweets splashed right onto your windshield Mama!"
+      }
+    ],
+    "RAIN_START": [
+      {
+        "id": "rain_1",
+        "speakerBn": "ভিজা পথচারী",
+        "speakerEn": "Soaked Pedestrian",
+        "avatar": "pedestrian",
+        "textBn": "সিলেটর বিখ্যাত বৃষ্টি শুরু হইছে! টার্পুলিন পর্দা নামাও মামা!",
+        "textEn": "Famous Sylhet rain has started! Lower the canvas curtain Mama!"
+      },
+      {
+        "id": "rain_2",
+        "speakerBn": "লন্ডনী পর্যটক",
+        "speakerEn": "London Tourist",
+        "avatar": "londoni",
+        "textBn": "লন্ডনেও এত বৃষ্টি দেখছি না রে বাজি! সিএনজি কি বোট হইব নি?",
+        "textEn": "Never saw such rain even in London! Is this CNG going to float?"
+      }
+    ],
+    "MOTHER_CALL": [
+      {
+        "id": "mom_1",
+        "speakerBn": "আম্মা (ফোনে)",
+        "speakerEn": "Mom (On Phone)",
+        "avatar": "elder",
+        "textBn": "ও পুয়া, ভাত খাইছস নি? সাতকরা দিয়া গরুর গোশত রান্ধিয়া রাখছি!",
+        "textEn": "Oh son, did you eat? I cooked beef curry with fresh Shatkora lime!"
+      },
+      {
+        "id": "mom_2",
+        "speakerBn": "আম্মা (ফোনে)",
+        "speakerEn": "Mom (On Phone)",
+        "avatar": "elder",
+        "textBn": "হুন, রাস্তায় বেশি কেরামতি দেখাইস না! সময় মত ঘরে ফিরিস!",
+        "textEn": "Listen, don't show off stunts on the road! Return home on time!"
+      }
+    ],
+    "TEA_BREAK": [
+      {
+        "id": "tea_1",
+        "speakerBn": "মালনীছড়ার মন্টু",
+        "speakerEn": "Tea Lover Montu",
+        "avatar": "tea",
+        "textBn": "মামা ৫ মিনিট দাঁড়াও, সাত রঙের স্পেশাল এক কাপ চা খাইয়া লই!",
+        "textEn": "Mama hold on 5 mins, let me sip a cup of 7-layer Sylheti tea!"
+      }
+    ],
+    "POTHOLE_HIT": [
+      {
+        "id": "pot_viral",
+        "speakerBn": "ক্ষিপ্ত পাবলিক ও জনতা",
+        "speakerEn": "Furious Crowd & Public",
+        "avatar": "walker",
+        "textBn": "ঐ ব্যাটা! সিএনজি থামা! তোরে পিটাইয়া পিঠের চামড়া লাল করে দিবো, সব নগরামি বের করবো! ধর ব্যাটারে!",
+        "textEn": "Hey you! Stop that CNG! Will beat you red and purge all your arrogance!"
+      },
+      {
+        "id": "pot_1",
+        "speakerBn": "সিএনজি মামা",
+        "speakerEn": "CNG Driver",
+        "avatar": "driver",
+        "textBn": "ইডা রাস্তার গর্ত না, সুরমা নদীর শাখা নদী!",
+        "textEn": "That wasn't a road pothole, that was a branch of the Surma River!"
+      },
+      {
+        "id": "pot_2",
+        "speakerBn": "যাত্রী",
+        "speakerEn": "Passenger",
+        "avatar": "passenger",
+        "textBn": "আমার কোমরের হাড় ৩ ইঞ্চি ডানে চইলা গেছে মামা!",
+        "textEn": "My backbone just shifted 3 inches to the right Mama!"
+      },
+      {
+        "id": "pot_3",
+        "speakerBn": "পথচারী চাচা",
+        "speakerEn": "Street Elder",
+        "avatar": "elder",
+        "textBn": "ঐ ড্রাইভার! রাস্তা কি তোর বাপের নাকি রে?! আইজ পিটাইয়া সব নগরামি ছুডামু!",
+        "textEn": "Hey driver! Does the road belong to your father?! Will teach you a lesson today!"
+      }
+    ],
+    "NEAR_MISS": [
+      {
+        "id": "miss_1",
+        "speakerBn": "ট্রাফিক পুলিশ",
+        "speakerEn": "Traffic Sergeant",
+        "avatar": "police",
+        "textBn": "এই যাত্রায় মায়ের দোয়ায় বাঁচলা মামা! নাইলে কেস নিশ্চিত ছিল!",
+        "textEn": "Only your mother's prayer saved you this time! Or a heavy fine!"
+      },
+      {
+        "id": "miss_2",
+        "speakerBn": "পথচারী",
+        "speakerEn": "Pedestrian",
+        "avatar": "pedestrian",
+        "textBn": "চুলের ব্যবধানে বাঁচলাম রে বাজি! ড্রাইভিং লাইসেন্স আছে নি?",
+        "textEn": "Saved by a hair's breadth! Do you even possess a driver's license?"
+      }
+    ],
+    "MISSION_SUCCESS": [
+      {
+        "id": "succ_1",
+        "speakerBn": "খুশি যাত্রী",
+        "speakerEn": "Happy Passenger",
+        "avatar": "passenger",
+        "textBn": "জিন্দাবাদ মামা! সময় মত পৌঁছাইয়া দিলা, এই নেও ১০ টাকা বকশিশ!",
+        "textEn": "Zindabad Mama! Delivered right on time, take this 10 Taka tip!"
+      },
+      {
+        "id": "succ_2",
+        "speakerBn": "সিএনজি ইউনিয়ন সভাপতি",
+        "speakerEn": "Union President",
+        "avatar": "leader",
+        "textBn": "সিলেট শহরের এক নম্বর ড্রাইভার খেতাব তোমারে দেওয়া উচিত!",
+        "textEn": "The Number One Driver Award of Sylhet rightfully belongs to you!"
+      }
+    ],
+    "MISSION_FAIL": [
+      {
+        "id": "fail_1",
+        "speakerBn": "ক্ষুব্ধ যাত্রী",
+        "speakerEn": "Furious Passenger",
+        "avatar": "passenger",
+        "textBn": "বিয়া শাদী সব শেষ হইয়া গেল আর তুমি এহন আইলা?! এক পয়সাও দিমু না!",
+        "textEn": "The entire wedding ended and you arrive now?! Not a single paisa!"
+      }
+    ]
+  }
+}

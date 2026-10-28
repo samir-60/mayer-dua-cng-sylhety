@@ -1,0 +1,95 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0c0a09;
+    color: #f5f5f4;
+  }
+}
+
+/* Custom Old Newspaper Texture and Print styling */
+.newspaper-paper {
+  background-color: #fbf7ec;
+  background-image: 
+    radial-gradient(#e5dec9 0.75px, transparent 0.75px),
+    radial-gradient(#e5dec9 0.75px, #fbf7ec 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.65), inset 0 0 100px rgba(180, 150, 100, 0.2);
+}
+
+.newspaper-divider {
+  border-bottom: 2px solid #1c1917;
+  border-top: 1px solid #1c1917;
+  height: 4px;
+}
+
+.newspaper-column-rule {
+  border-right: 1px solid #d6cfbe;
+}
+
+/* Painted signboard style with thick charcoal borders and hard offset shadows */
+.signboard-panel {
+  background-color: #F6F1E4;
+  color: #26282B;
+  border: 2px solid #26282B;
+  box-shadow: 3px 3px 0px #26282B;
+}
+
+.signboard-btn {
+  background-color: #F2C230;
+  color: #26282B;
+  border: 2px solid #26282B;
+  box-shadow: 3px 3px 0px #26282B;
+  transition: transform 0.05s ease, box-shadow 0.05s ease;
+}
+
+.signboard-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #26282B;
+}
+
+/* Glassmorphism for legacy Game HUD elements */
+.glass-panel {
+  background: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-panel-warning {
+  background: rgba(180, 83, 9, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(251, 191, 36, 0.4);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.15);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(180, 140, 60, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 140, 60, 0.7);
+}
